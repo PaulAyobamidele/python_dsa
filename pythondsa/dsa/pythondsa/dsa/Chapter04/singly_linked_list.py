@@ -1,14 +1,11 @@
 class Node:
     """ A singly-linked node. """
-
     def __init__(self, data=None):
         self.data = data
         self.next = None
 
-
 class SinglyLinkedList:
     """ A singly-linked list. """
-
     def __init__(self):
         """ Create an empty list. """
         self.tail = None
@@ -72,7 +69,6 @@ class SinglyLinkedList:
         for n in range(index):
             current = current.next
         current.data = value
-
 
 words = SinglyLinkedList()
 words.append('foo')
