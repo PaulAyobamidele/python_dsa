@@ -1,9 +1,9 @@
 class Node(object):
     """ A Doubly-linked lists' node. """
+
     def __init__(self, data=None, next=None, prev=None):
         self.data = data
         self.next = next
-        self.prev = prev
 
 
 class DoublyLinkedList(object):
@@ -28,7 +28,8 @@ class DoublyLinkedList(object):
 
     def iter(self):
         """ Iterate through the list. """
-        current = self.head #note subtle change
+        current = self.head  # note subtle change
+
         while current:
             val = current.data
             current = current.next
@@ -116,7 +117,7 @@ class DoublyLinkedList(object):
     def __getitem__(self, index):
         if index > self.count - 1:
             raise Exception("Index out of range.")
-        current = self.head # Note subtle change
+        current = self.head  # Note subtle change
         for n in range(index):
             current = current.next
         return current.data
@@ -124,7 +125,7 @@ class DoublyLinkedList(object):
     def __setitem__(self, index, value):
         if index > self.count - 1:
             raise Exception("Index out of range.")
-        current = self.head # Note subtle change
+        current = self.head  # Note subtle change
         for n in range(index):
             current = current.next
         current.data = value

@@ -124,9 +124,9 @@ class LinkedList:
 ll = LinkedList()
 ll.insert_values(["banana", "mango", "grapes", "orange"])
 ll.print()
-ll.insert_after_value("mango", "apple")  # insert apple after mango
+ll.insert_after_value("mango", "apple")
 ll.print()
-ll.remove_by_value("orange")  # remove orange from linked list
+ll.remove_by_value("orange")
 ll.print()
 ll.remove_by_value("figs")
 ll.print()
